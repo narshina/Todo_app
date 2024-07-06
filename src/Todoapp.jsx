@@ -22,32 +22,15 @@ export const Todoapp = () => {
           <div className='flex flex-col gap-4'>
             <div className='flex items-center'>
               <label className='w-28 text-white font-semibold'>TITLE:</label>
-              <input
-                onChange={handleChange}
-                value={input.title}
-                className='text-black h-9 bg-white pl-3 w-72 rounded-md border'
-                name='title'
-                type='text'
-              />
+              <input onChange={handleChange} value={input.title} className='text-black h-9 bg-white pl-3 w-72 rounded-md border' name='title'  type='text'/>
             </div>
             <div className='flex items-center'>
               <label className='w-28 text-white font-semibold'>DESCRIPTION:</label>
-              <input
-                onChange={handleChange}
-                value={input.description}
-                className='text-black h-9 bg-white pl-3 w-72 rounded-md border'
-                name='description'
-                type='text'
-              />
+              <input onChange={handleChange} value={input.description} className='text-black h-9 bg-white pl-3 w-72 rounded-md border' name='description' type='text'/>
             </div>
             <div className='flex items-center'>
               <label className='w-28 text-white font-semibold'>STATUS:</label>
-              <select
-                onChange={handleChange}
-                value={input.status}
-                className='text-black h-9 bg-white pl-3 w-72 rounded-md border'
-                name='status'
-              >
+              <select onChange={handleChange} value={input.status} className='text-black h-9 bg-white pl-3 w-72 rounded-md border' name='status' >
                 <option value="completed">Completed</option>
                 <option value="notcompleted">Not Completed</option>
               </select>
